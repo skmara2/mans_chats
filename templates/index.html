@@ -1,0 +1,24 @@
+<!DOCTYPE.html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint"content= "width=device-width, initial-scale=1.0" >
+   <title>Chats mans</title>
+   <link href="{{url_for('static', filename='favicon.ico')}}" rel="icon" type="image/x-icon"/>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel= "stylesheet" href="{{url_for('static', filename='stils.css')}}"> 
+    
+</head>
+
+<body onload="lasiChatu();" class="body">
+
+<div>  
+{% block content %}
+
+{% endblock %}
+
+</div>
+    <script src="{{url_for('static', filename='chats.js')}}" type="text/javascript"></script>
+
+
+</body>
+</html>
